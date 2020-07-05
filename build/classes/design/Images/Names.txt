@@ -1,0 +1,34 @@
+
+(Select Screen)
+easy_rb
+medium_rb
+hard_rb
+play_btn
+
+--------
+(single palyer)
+player_name
+pc_name
+score_pc
+score_player
+-------------------------------------
+(Multiplayer)
+player1_name
+player1_score
+player2_score
+player2_name
+------------------------------------
+(save)
+yes_rb
+no_rb
+play_btn
+--------------------
+(gameover-win-match) 
+play_btn
+back_btn
+---------
+regist_btn     login_btn
+pass_txt
+user_txt
+error_txt
+

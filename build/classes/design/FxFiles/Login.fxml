@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="636.0" prefWidth="743.0" styleClass="im" stylesheets="@bgStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane blendMode="SRC_ATOP" cache="true" depthTest="ENABLE" prefHeight="454.0" prefWidth="600.0">
+               <center>
+                  <VBox alignment="CENTER" prefHeight="162.0" prefWidth="754.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="1.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="SE_RESIZE" />
+                     </cursor>
+                     <BorderPane.margin>
+                        <Insets top="70.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="734.0">
+                           <children>
+                              <GridPane alignment="CENTER" layoutX="85.0" layoutY="-95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="530.0" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="-95.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="63.000006103515624" minHeight="10.0" prefHeight="60.60001220703125" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="48.59998168945313" minHeight="10.0" prefHeight="46.199987792968756" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="46.0" prefWidth="282.0" text="Second User Name" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="#a74c4c" />
+                                                <Stop color="#532d84" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <padding>
+                                          <Insets bottom="1.0" left="20.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="263.0" text="Passward" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop color="#a74c4c" />
+                                                <Stop color="#4d2882" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="user_txt" promptText="Enert UserName" GridPane.columnIndex="1" />
+                                    <TextField fx:id="pass_txt" promptText="Enter Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="login_btn" layoutX="219.0" layoutY="149.0" mnemonicParsing="false" opacity="0.69" prefHeight="81.0" prefWidth="378.0" style="-fx-background-color: f5c3bc;" text="Login" textAlignment="CENTER" textFill="#3251b7">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <Hyperlink prefHeight="23.0" prefWidth="334.0" text="Regist Now " textFill="#a31796">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label fx:id="error_txt" prefHeight="18.0" prefWidth="334.0" text="ErrorMssage" textFill="#da0606" />
+                     </children>
+                  </VBox>
+               </center>
+               <top>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="754.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#dfcbdd" fontSmoothingType="LCD" layoutX="158.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" textAlignment="CENTER" wrappingWidth="452.9777069091797">
+                           <font>
+                              <Font name="Berlin Sans FB" size="72.0" />
+                           </font>
+                           <effect>
+                              <Bloom threshold="0.52" />
+                           </effect>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
